@@ -21,4 +21,16 @@ public class App {
         System.out.println("Index of 'bc': " + i);
         System.out.println("Last index of 'bc': " + j);
     }
+
+    public static int max(int x, int y, int z) {
+        int aux; 
+        if(x > y && x > z) {
+            aux = x;
+        } else if(y > z) {
+            aux = y;
+        } else {
+            aux = z;
+        }
+        return aux;
+    }
 }
